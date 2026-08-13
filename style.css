@@ -1,1 +1,954 @@
 
+/* =========================================
+   LOLO GOU LAKAY
+   STYLE CSS - RESTAURANT HAÏTIEN
+========================================= */
+
+
+/* =========================================
+   VARIABLES
+========================================= */
+
+:root {
+    --green: #173f31;
+    --green-light: #245c45;
+    --red: #c84235;
+    --gold: #f4c542;
+
+    --cream: #fffaf1;
+    --sand: #f7ead4;
+    --white: #ffffff;
+
+    --text: #1d2723;
+    --muted: #69736d;
+
+    --shadow: 0 18px 45px rgba(23, 63, 49, 0.12);
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cream);
+    color: var(--text);
+    font-family: "DM Sans", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px 6vw;
+
+    background: rgba(255, 250, 241, 0.95);
+    backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid rgba(23, 63, 49, 0.08);
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--green);
+
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.logo strong {
+    color: var(--red);
+}
+
+
+/* Cercle LG */
+
+.logo-mark {
+    width: 42px;
+    height: 42px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: var(--green);
+    color: var(--gold);
+
+    font-weight: 800;
+}
+
+
+/* Menu */
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: var(--green);
+
+    font-size: 0.92rem;
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+nav a:hover {
+    color: var(--red);
+}
+
+
+/* =========================================
+   ELEMENTS GENERAUX
+========================================= */
+
+.eyebrow {
+    margin-bottom: 12px;
+
+    color: var(--red);
+
+    font-size: 0.78rem;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+h1,
+h2,
+h3 {
+    color: var(--green);
+
+    font-family: "Playfair Display",
+        Georgia,
+        serif;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 760px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 70px 7vw 90px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(244, 197, 66, 0.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #fffaf1 0%,
+            #f6ead5 100%
+        );
+}
+
+
+/* Texte hero */
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    margin-bottom: 18px;
+
+    font-size: clamp(
+        3.5rem,
+        7vw,
+        6.8rem
+    );
+
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+}
+
+.hero-text {
+    max-width: 590px;
+
+    margin-bottom: 30px;
+
+    color: var(--muted);
+
+    font-size: 1.12rem;
+}
+
+
+/* Boutons */
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    min-height: 50px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 23px;
+
+    border-radius: 999px;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(23, 63, 49, 0.15);
+}
+
+
+/* Bouton rouge */
+
+.btn.primary {
+    background: var(--red);
+    color: white;
+}
+
+
+/* Bouton vert */
+
+.btn.secondary {
+    background: var(--green);
+    color: white;
+}
+
+
+/* Illustration */
+
+.restaurant-illustration {
+    max-width: 600px;
+
+    margin: auto;
+
+    filter:
+        drop-shadow(
+            0 25px 30px
+            rgba(23, 63, 49, 0.12)
+        );
+}
+
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.intro {
+    display: grid;
+
+    grid-template-columns:
+        0.9fr 1.1fr;
+
+    gap: 60px;
+
+    padding: 85px 8vw;
+
+    background: var(--green);
+
+    color: white;
+}
+
+.intro h2 {
+    color: white;
+
+    font-size: clamp(
+        2rem,
+        4vw,
+        3.6rem
+    );
+
+    line-height: 1.05;
+}
+
+.intro p:last-child {
+    align-self: center;
+
+    max-width: 680px;
+
+    color:
+        rgba(255, 255, 255, 0.78);
+
+    font-size: 1.1rem;
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+
+.menu-section {
+    padding: 100px 7vw;
+}
+
+
+/* Titre */
+
+.section-heading {
+    max-width: 760px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin-bottom: 18px;
+
+    font-size: clamp(
+        2rem,
+        4vw,
+        3.6rem
+    );
+
+    line-height: 1.05;
+}
+
+.section-heading p:last-child {
+    color: var(--muted);
+}
+
+
+/* Grille */
+
+.menu-grid {
+    max-width: 1250px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 24px;
+
+    margin: auto;
+}
+
+
+/* Carte */
+
+.dish-card {
+    overflow: hidden;
+
+    background: white;
+
+    border-radius: 22px;
+
+    box-shadow: var(--shadow);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.dish-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 25px 55px
+        rgba(23, 63, 49, 0.16);
+}
+
+
+/* Grande carte */
+
+.dish-card.featured {
+    grid-column: span 2;
+}
+
+
+/* Image */
+
+.dish-card img {
+    width: 100%;
+    height: 260px;
+
+    object-fit: cover;
+}
+
+.dish-card.featured img {
+    height: 330px;
+}
+
+
+/* Informations */
+
+.dish-info {
+    padding: 22px;
+}
+
+.dish-info h3 {
+    margin-bottom: 7px;
+
+    font-size: 1.55rem;
+}
+
+.dish-info p {
+    margin-bottom: 16px;
+
+    color: var(--muted);
+
+    font-size: 0.95rem;
+}
+
+
+/* Prix */
+
+.price {
+    display: inline-block;
+
+    color: var(--red);
+
+    font-weight: 800;
+
+    font-size: 1rem;
+}
+
+
+/* Badge spécialité */
+
+.tag {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    padding: 5px 9px;
+
+    border-radius: 999px;
+
+    background: #fff1cf;
+
+    color: #755400;
+
+    font-size: 0.72rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   SECTION RESTAURANT
+========================================= */
+
+.about-section {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    padding: 100px 8vw;
+
+    background: #f3e4ca;
+}
+
+
+/* Image / assiette */
+
+.about-image {
+    position: relative;
+
+    min-height: 470px;
+
+    display: grid;
+    place-items: center;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #d7b781,
+            #f9efdf
+        );
+
+    box-shadow: var(--shadow);
+}
+
+
+/* Badge 100% Haïtien */
+
+.about-badge {
+    position: absolute;
+
+    top: 28px;
+    left: 28px;
+
+    z-index: 2;
+
+    width: 92px;
+    height: 92px;
+
+    display: grid;
+    place-content: center;
+
+    border-radius: 50%;
+
+    text-align: center;
+
+    background: var(--red);
+    color: white;
+
+    font-size: 1.15rem;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    transform: rotate(-8deg);
+}
+
+.about-badge span {
+    margin-top: 5px;
+
+    font-size: 0.68rem;
+
+    letter-spacing: 1px;
+}
+
+
+/* Assiette */
+
+.plate {
+    width: 290px;
+    height: 290px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    box-shadow:
+        inset 0 0 0 15px #e7dfd1,
+        0 25px 30px
+        rgba(23, 63, 49, 0.15);
+}
+
+
+/* Nourriture */
+
+.food {
+    position: absolute;
+
+    border-radius: 50%;
+}
+
+
+/* Griyo */
+
+.food-1 {
+    width: 130px;
+    height: 100px;
+
+    background: #7d4127;
+
+    transform:
+        translate(-45px, -30px)
+        rotate(-15deg);
+}
+
+
+/* Légumes */
+
+.food-2 {
+    width: 115px;
+    height: 90px;
+
+    background: #7c9d3d;
+
+    transform:
+        translate(55px, 40px);
+}
+
+
+/* Bannann */
+
+.food-3 {
+    width: 75px;
+    height: 75px;
+
+    background: var(--gold);
+
+    transform:
+        translate(-80px, 65px);
+}
+
+
+/* Pikliz */
+
+.food-4 {
+    width: 90px;
+    height: 55px;
+
+    background: var(--red);
+
+    transform:
+        translate(75px, -75px)
+        rotate(18deg);
+}
+
+
+/* Texte */
+
+.about-content h2 {
+    margin-bottom: 18px;
+
+    font-size: clamp(
+        2rem,
+        4vw,
+        3.6rem
+    );
+
+    line-height: 1.05;
+}
+
+.about-content > p:not(.eyebrow) {
+    color: var(--muted);
+}
+
+
+/* =========================================
+   CARACTERISTIQUES
+========================================= */
+
+.features {
+    display: grid;
+
+    gap: 14px;
+
+    margin-top: 28px;
+}
+
+.features div {
+    display: grid;
+
+    grid-template-columns:
+        45px 1fr;
+
+    align-items: center;
+
+    column-gap: 12px;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid
+        rgba(23, 63, 49, 0.12);
+}
+
+.features span {
+    grid-row: span 2;
+
+    font-size: 1.5rem;
+}
+
+.features strong {
+    color: var(--green);
+}
+
+.features small {
+    color: var(--muted);
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-section {
+    display: grid;
+
+    grid-template-columns:
+        1.1fr 0.9fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+    padding: 90px 8vw;
+}
+
+.contact-section h2 {
+    margin-bottom: 18px;
+
+    font-size: clamp(
+        2rem,
+        4vw,
+        3.6rem
+    );
+
+    line-height: 1.05;
+}
+
+.contact-section > div:first-child p:last-child {
+    color: var(--muted);
+}
+
+
+/* Carte contact */
+
+.contact-card {
+    padding: 30px;
+
+    border-radius: 24px;
+
+    background: var(--green);
+
+    color: white;
+
+    box-shadow: var(--shadow);
+}
+
+.contact-card p {
+    margin: 0;
+
+    padding: 13px 0;
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.14);
+}
+
+.contact-card p:last-child {
+    border-bottom: none;
+}
+
+.contact-card strong {
+    color: var(--gold);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 25px 7vw;
+
+    background: #102e24;
+
+    color:
+        rgba(255, 255, 255, 0.72);
+
+    font-size: 0.82rem;
+}
+
+footer strong {
+    color: white;
+}
+
+
+/* =========================================
+   TABLETTE
+========================================= */
+
+@media (max-width: 950px) {
+
+    nav {
+        gap: 15px;
+    }
+
+
+    .hero,
+    .intro,
+    .about-section,
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero {
+        padding-top: 55px;
+    }
+
+
+    .hero-content {
+        text-align: center;
+
+        margin: auto;
+    }
+
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+
+    .menu-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .dish-card.featured {
+        grid-column: span 2;
+    }
+
+}
+
+
+/* =========================================
+   TELEPHONE
+========================================= */
+
+@media (max-width: 650px) {
+
+    /* Navigation */
+
+    .navbar {
+        padding: 12px 5vw;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: auto;
+
+        padding:
+            55px 5vw
+            70px;
+    }
+
+
+    .hero h1 {
+        font-size: 3.7rem;
+
+        letter-spacing: -2px;
+    }
+
+
+    /* Sections */
+
+    .intro,
+    .menu-section,
+    .about-section,
+    .contact-section {
+        padding:
+            65px 5vw;
+    }
+
+
+    /* Menu */
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .dish-card.featured {
+        grid-column: span 1;
+    }
+
+
+    .dish-card img,
+    .dish-card.featured img {
+        height: 245px;
+    }
+
+
+    /* Restaurant */
+
+    .about-image {
+        min-height: 360px;
+    }
+
+
+    .plate {
+        width: 220px;
+        height: 220px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        flex-direction: column;
+    }
+
+}
