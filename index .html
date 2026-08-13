@@ -1,1 +1,612 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+          content="Lolo Gou Lakay - Restaurant de cuisine haïtienne authentique.">
+
+    <title>Lolo Gou Lakay | Cuisine Haïtienne</title>
+
+    <!-- Fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BARRE DE NAVIGATION
+    ========================== -->
+    <header class="navbar">
+
+        <a href="#accueil" class="logo">
+            <span class="logo-mark">LG</span>
+
+            <span>
+                Lolo <strong>Gou Lakay</strong>
+            </span>
+        </a>
+
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#menu">Notre menu</a>
+            <a href="#restaurant">Le restaurant</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             SECTION ACCUEIL
+        ========================== -->
+        <section id="accueil" class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    🇭🇹 Kizin Ayisyen • Cuisine Haïtienne
+                </p>
+
+                <h1>
+                    Lolo Gou Lakay
+                </h1>
+
+                <p class="hero-text">
+                    Le goût de la maison, servi avec le cœur.
+                    Découvrez des plats haïtiens préparés avec
+                    des recettes traditionnelles, des épices locales
+                    et beaucoup de passion.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#menu" class="btn primary">
+                        Découvrir le menu
+                    </a>
+
+                    <a href="#restaurant" class="btn secondary">
+                        Voir le restaurant
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Illustration du restaurant -->
+            <div class="restaurant-illustration">
+
+                <svg viewBox="0 0 600 430"
+                     role="img"
+                     aria-label="Restaurant Lolo Gou Lakay"
+                     xmlns="http://www.w3.org/2000/svg">
+
+                    <rect
+                        width="600"
+                        height="430"
+                        rx="30"
+                        fill="#f7ead4"
+                    />
+
+                    <circle
+                        cx="490"
+                        cy="75"
+                        r="42"
+                        fill="#f4c542"
+                        opacity=".55"
+                    />
+
+                    <path
+                        d="M0 335 Q150 285 300 335 T600 335 V430 H0Z"
+                        fill="#245c45"
+                    />
+
+                    <!-- bâtiment -->
+                    <rect
+                        x="105"
+                        y="105"
+                        width="390"
+                        height="245"
+                        rx="8"
+                        fill="#fffaf1"
+                    />
+
+                    <!-- toit -->
+                    <path
+                        d="M80 120 L300 45 L520 120 Z"
+                        fill="#c84235"
+                    />
+
+                    <path
+                        d="M92 116 L300 52 L508 116"
+                        fill="none"
+                        stroke="#f4c542"
+                        stroke-width="10"
+                    />
+
+                    <!-- panneau -->
+                    <rect
+                        x="135"
+                        y="165"
+                        width="330"
+                        height="72"
+                        rx="10"
+                        fill="#173f31"
+                    />
+
+                    <text
+                        x="300"
+                        y="196"
+                        text-anchor="middle"
+                        fill="#f4c542"
+                        font-size="26"
+                        font-family="Georgia,serif"
+                        font-weight="700">
+                        LOLO GOU LAKAY
+                    </text>
+
+                    <text
+                        x="300"
+                        y="222"
+                        text-anchor="middle"
+                        fill="#fffaf1"
+                        font-size="13"
+                        font-family="Arial,sans-serif"
+                        letter-spacing="3">
+                        KIZIN AYISYEN
+                    </text>
+
+                    <!-- fenêtres -->
+                    <rect
+                        x="145"
+                        y="255"
+                        width="100"
+                        height="95"
+                        rx="6"
+                        fill="#e6d4b5"
+                    />
+
+                    <rect
+                        x="355"
+                        y="255"
+                        width="100"
+                        height="95"
+                        rx="6"
+                        fill="#e6d4b5"
+                    />
+
+                    <!-- porte -->
+                    <rect
+                        x="265"
+                        y="255"
+                        width="70"
+                        height="95"
+                        rx="6"
+                        fill="#c84235"
+                    />
+
+                    <circle
+                        cx="300"
+                        cy="292"
+                        r="20"
+                        fill="#f4c542"
+                    />
+
+                    <text
+                        x="300"
+                        y="400"
+                        text-anchor="middle"
+                        fill="#173f31"
+                        font-size="15"
+                        font-family="Arial,sans-serif">
+                        Bienvenue chez nous
+                    </text>
+
+                </svg>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INTRODUCTION
+        ========================== -->
+        <section class="intro">
+
+            <div>
+
+                <p class="eyebrow">
+                    Sa k fè nou diferan
+                </p>
+
+                <h2>
+                    Une cuisine qui a le goût de chez nous
+                </h2>
+
+            </div>
+
+            <p>
+                Chez <strong>Lolo Gou Lakay</strong>, nous mettons
+                Haïti dans chaque assiette :
+                riz kole, griyo, bannann peze, pikliz,
+                légumes, soup joumou et bien plus encore.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             MENU
+        ========================== -->
+        <section id="menu" class="menu-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Men nou an
+                </p>
+
+                <h2>
+                    Notre menu haïtien
+                </h2>
+
+                <p>
+                    Découvrez nos plats traditionnels haïtiens.
+                </p>
+
+            </div>
+
+
+            <div class="menu-grid">
+
+
+                <!-- GRIYO -->
+                <article class="dish-card featured">
+
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Griot_ha%C3%AFtien.jpg"
+                        alt="Griyo haïtien"
+                        loading="lazy"
+                    >
+
+                    <div class="dish-info">
+
+                        <span class="tag">
+                            Spécialité
+                        </span>
+
+                        <h3>
+                            Griyo Haïtien
+                        </h3>
+
+                        <p>
+                            Porc mariné, tendre et croustillant,
+                            accompagné de pikliz et de bannann peze.
+                        </p>
+
+                        <span class="price">
+                            1 250 HTG
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- DIRI KOLE -->
+                <article class="dish-card">
+
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Ayiti%26DR_2007_085.jpg"
+                        alt="Diri kole ak pwa"
+                        loading="lazy"
+                    >
+
+                    <div class="dish-info">
+
+                        <h3>
+                            Diri Kole ak Pwa
+                        </h3>
+
+                        <p>
+                            Riz et pois rouges à la manière haïtienne,
+                            servis avec griyo, bannann peze et pikliz.
+                        </p>
+
+                        <span class="price">
+                            950 HTG
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SOUP JOUMOU -->
+                <article class="dish-card">
+
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Soup_joumou.jpg"
+                        alt="Soupe joumou haïtienne"
+                        loading="lazy"
+                    >
+
+                    <div class="dish-info">
+
+                        <span class="tag">
+                            Tradition
+                        </span>
+
+                        <h3>
+                            Soup Joumou
+                        </h3>
+
+                        <p>
+                            Soupe au giraumon, bœuf et légumes,
+                            symbole de liberté et de tradition haïtienne.
+                        </p>
+
+                        <span class="price">
+                            750 HTG
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- BANNANN PEZE -->
+                <article class="dish-card">
+
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Ayiti%26DR_2007_085.jpg"
+                        alt="Bannann peze et pikliz"
+                        loading="lazy"
+                    >
+
+                    <div class="dish-info">
+
+                        <h3>
+                            Bannann Peze & Pikliz
+                        </h3>
+
+                        <p>
+                            Bananes plantains pressées et frites,
+                            accompagnées de notre pikliz bien relevé.
+                        </p>
+
+                        <span class="price">
+                            450 HTG
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PLAT MAISON -->
+                <article class="dish-card">
+
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Griot_ha%C3%AFtien.jpg"
+                        alt="Plat Lolo Gou Lakay"
+                        loading="lazy"
+                    >
+
+                    <div class="dish-info">
+
+                        <h3>
+                            Plat Lolo Gou Lakay
+                        </h3>
+
+                        <p>
+                            Griyo, diri kole ak pwa, bannann peze,
+                            salade et pikliz.
+                        </p>
+
+                        <span class="price">
+                            1 500 HTG
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PÂTÉS -->
+                <article class="dish-card">
+
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Haitian_Patties.jpg"
+                        alt="Pâtés haïtiens"
+                        loading="lazy"
+                    >
+
+                    <div class="dish-info">
+
+                        <h3>
+                            Pâtés Haïtiens
+                        </h3>
+
+                        <p>
+                            Petits pâtés dorés, parfaits pour une entrée
+                            ou une pause gourmande à la haïtienne.
+                        </p>
+
+                        <span class="price">
+                            350 HTG
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PRÉSENTATION DU RESTAURANT
+        ========================== -->
+        <section id="restaurant" class="about-section">
+
+            <div class="about-image">
+
+                <div class="about-badge">
+                    100%<br>
+                    <span>Haïtien</span>
+                </div>
+
+                <div class="plate-art">
+
+                    <div class="plate"></div>
+
+                    <div class="food food-1"></div>
+                    <div class="food food-2"></div>
+                    <div class="food food-3"></div>
+                    <div class="food food-4"></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p class="eyebrow">
+                    Lakay se lakay
+                </p>
+
+                <h2>
+                    Bienvenue dans notre maison
+                </h2>
+
+                <p>
+                    Lolo Gou Lakay est pensé comme une table familiale :
+                    une ambiance chaleureuse, des recettes inspirées
+                    de nos maisons et des saveurs qui rappellent Haïti.
+                </p>
+
+
+                <div class="features">
+
+                    <div>
+                        <span>🌶️</span>
+
+                        <strong>
+                            Épices haïtiennes
+                        </strong>
+
+                        <small>
+                            Saveurs authentiques
+                        </small>
+                    </div>
+
+
+                    <div>
+                        <span>🍲</span>
+
+                        <strong>
+                            Recettes traditionnelles
+                        </strong>
+
+                        <small>
+                            Préparées avec soin
+                        </small>
+                    </div>
+
+
+                    <div>
+                        <span>❤️</span>
+
+                        <strong>
+                            Service chaleureux
+                        </strong>
+
+                        <small>
+                            Comme à la maison
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+        <section id="contact" class="contact-section">
+
+            <div>
+
+                <p class="eyebrow">
+                    Vin manje avèk nou
+                </p>
+
+                <h2>
+                    Prêt à goûter Haïti ?
+                </h2>
+
+                <p>
+                    Réservez votre table ou contactez-nous pour connaître
+                    les plats disponibles du jour.
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <p>
+                    <strong>📞 Téléphone</strong>
+                    <br>
+                    +509 XX XX XX XX
+                </p>
+
+                <p>
+                    <strong>📍 Adresse</strong>
+                    <br>
+                    Votre adresse, Haïti
+                </p>
+
+                <p>
+                    <strong>🕐 Horaires</strong>
+                    <br>
+                    Lun–Sam : 11h00 – 21h00
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+
+        <p>
+            <strong>Lolo Gou Lakay</strong>
+            — Le goût de la maison 🇭🇹
+        </p>
+
+        <p>
+            © 2026 Lolo Gou Lakay.
+            Tous droits réservés.
+        </p>
+
+    </footer>
+
+</body>
+</html>
